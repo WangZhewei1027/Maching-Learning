@@ -122,6 +122,12 @@ main aside {
     }
 }
 
+@media print {
+    main .main-title {
+        grid-column: 1/-2;
+    }
+}
+
 @media (min-width: 700px) {
     main .terrarium {
         grid-column: 1/-1;
@@ -129,6 +135,12 @@ main aside {
 }
 
 @media (min-width: 1024px) {
+    main .terrarium {
+        grid-column: 3/span 2;
+    }
+}
+
+@media print {
     main .terrarium {
         grid-column: 3/span 2;
     }
@@ -146,6 +158,12 @@ main aside {
     }
 }
 
+@media print {
+    main .main-text {
+        grid-column: span 2;
+    }
+}
+
 @media (min-width: 700px) {
     main .sidebar {
         grid-column: 1/-1;
@@ -153,6 +171,13 @@ main aside {
 }
 
 @media (min-width: 1024px) {
+    main .sidebar {
+        grid-row: 3/9;
+        grid-column: 5/6;
+    }
+}
+
+@media print {
     main .sidebar {
         grid-row: 3/9;
         grid-column: 5/6;
@@ -181,6 +206,13 @@ main .article-bar-1 {
     }
 }
 
+@media print {
+    main .hogwarts {
+        grid-column: 3;
+        grid-row: span 2;
+    }
+}
+
 @media (min-width: 700px) {
     main .menu {
         grid-column: 1/-1;
@@ -189,6 +221,13 @@ main .article-bar-1 {
 }
 
 @media (min-width: 1024px) {
+    main .menu {
+        grid-row: 7/8;
+        grid-column: 2/4;
+    }
+}
+
+@media print {
     main .menu {
         grid-row: 7/8;
         grid-column: 2/4;
@@ -334,6 +373,15 @@ aside>div>div {
     }
 }
 
+@media print {
+    .sidebar {
+        display: block;
+        border-left: 1px solid;
+        padding-left: 1.2rem;
+        margin: 0;
+    }
+}
+
 .main-text.multi-column {
     margin: 0;
 }
@@ -425,6 +473,13 @@ aside>div>div {
     height: 96%;
     object-fit: cover;
     object-position: right;
+}
+
+@media print {
+    .item-with-image img {
+        height: 250px;
+        width: 250px;
+    }
 }
 
 .pie {
@@ -519,6 +574,12 @@ aside>div>div {
     }
 }
 
+@media print {
+    .menu {
+        margin: 0;
+    }
+}
+
 .menu figure {
     height: 100%;
 }
@@ -565,6 +626,12 @@ aside>div>div {
     }
 }
 
+@media print {
+    .captcha {
+        margin-top: 0;
+    }
+}
+
 .workout {
     border: 2px solid transparent;
     outline: 3px solid var(--black);
@@ -585,6 +652,12 @@ aside>div>div {
 }
 
 @media (min-width: 1024px) {
+    .workout__image img {
+        height: 25rem;
+    }
+}
+
+@media print {
     .workout__image img {
         height: 25rem;
     }
@@ -657,6 +730,12 @@ aside>div>div {
     }
 }
 
+@media print {
+    .plan {
+        border-bottom: 1px solid;
+    }
+}
+
 .pie:hover img,
 .social:hover img,
 .menu:hover img,
@@ -676,4 +755,11 @@ aside>div>div {
 .hogwarts:hover .hogwarts__title {
     background: transparent;
     color: var(--black);
+}
+
+@media print {
+    main .hogwarts {
+        grid-column: 3;
+        grid-row: span 3;
+    }
 }
