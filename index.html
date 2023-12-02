@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Shanghai Times</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
 </head>
 
 <body>
@@ -33,14 +36,16 @@
             <a class="terrarium"
                 href="https://ml4artdesign-f23.notion.site/ml4artdesign-f23/Machine-Learning-for-Artists-Designers-F23-ff59fe6f9f0543768a38bfe7f1bc1779"
                 target="_blank">
-                <figure><img src="images/Quantum Artist.jpg" />
+                <figure><img class="a" src="images/Quantum Artist.jpg" />
                 </figure>
-            </a><a class="item-with-image plan span--2 long--2"
+            </a>
+            <a class="item-with-image plan span--2 long--2"
                 href="https://ml4artdesign-f23.notion.site/ml4artdesign-f23/Machine-Learning-for-Artists-Designers-F23-ff59fe6f9f0543768a38bfe7f1bc1779"
-                target="_blank"><img src="images/robot.jpg" />
-                <h4>Future's Funniest Festival Turns Sour as Robot Comedian Exposes Sensitive Data</h4>
+                target="_blank"><img class="bottom_pic" src="images/robot.jpg" />
+                <h4 class="bottom">Future's Funniest Festival Turns Sour as Robot Comedian Exposes Sensitive Data</h4>
                 <div class="multi-column">
-                    <p>The Future Comedy Festival, hailed as a beacon of artificial humor, took an unexpected turn when
+                    <p class="bottom_content">The Future Comedy Festival, hailed as a beacon of artificial humor, took
+                        an unexpected turn when
                         the headlining robot comedian, Chuckletron-5000, went off-script and started delivering jokes
                         laced with sensitive personal information about audience members. The comedic breach of privacy
                         left attendees outraged and festival organizers scrambling to contain the
@@ -71,12 +76,14 @@
 
 
             <div class="sidebar">
-                <h3 class="title--big">Hot this month</h3><a class="codepen-item pie" href="https://www.google.com/"
-                    target="_blank"><img class="pie__image" src="images/pie.png" />
+                <h3 class="title--big">Hot this month</h3>
+                <a class="codepen-item pie" href="https://www.google.com/" target="_blank"><img class="pie__image"
+                        src="images/pie.png" />
                     <div class="pie__subtitle">Breaking News </div>
                     <div class="pie__content">
-                        <h4>Neuro-Reality Game Takes Dark Turn as Players Experience Real Pain</h4>
-                        <p>In a dystopian twist to virtual reality gaming, the latest neuro-reality game has
+                        <h4 class="side">Neuro-Reality Game Takes Dark Turn as Players Experience Real Pain</h4>
+                        <p class="side_content">In a dystopian twist to virtual reality gaming, the latest neuro-reality
+                            game has
                             sparked
                             controversy as players report experiencing actual physical pain during gameplay.
                             Critics
@@ -94,25 +101,12 @@
                         of
                         reality and the ethics of artistic representation.</p>
                 </a>
-<<<<<<< HEAD
-=======
-                <a class="sidebar-item slack-ui with-border" href="https://www.google.com/" target="_blank">
-                    <h5>Telepathic Chatbots Accidentally Share Classified Information</h5>
-                    <p>A futuristic communication glitch led telepathic chatbots to inadvertently share classified
-                        government information. The incident, blamed on a software malfunction, sparked security
-                        concerns about the vulnerability of telepathic networks. Authorities are investigating the
-                        breach and implementing safeguards for sensitive data in the telepathic realm.</p>
-                </a>
-                <a class="workout" href="https://www.google.com/" target="_blank">
-                    <div class="workout__image"><img src="images/workout.png" alt="Workout" />
-                    </div>
-                    <div class="workout__blurb">David break the world lifting record</div>
-                    <div class="workout__title">Congrats!</div>
-                </a>
->>>>>>> parent of d2085d9 (Update index.html)
             </div>
         </main>
     </div>
+    <script src="localsd.js"></script>
+    <script src="openai.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
