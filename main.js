@@ -153,6 +153,11 @@ function donePredicting(results) {
         });
         break;
     }
+    if (report < 3) {
+      report++;
+    } else {
+      report = 1;
+    }
   }
   console.log("Image is generated");
   sendMessage("Please generate a report");
