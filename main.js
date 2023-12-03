@@ -8,7 +8,7 @@
 let openai_api_proxy = "https://sordid-hexagonal-bunny.glitch.me/";
 let local_sd_api = "https://gpu.gohai.xyz:3000/";
 let img;
-let report = 0;
+let report = 1;
 let className = [];
 let className2 = [];
 
