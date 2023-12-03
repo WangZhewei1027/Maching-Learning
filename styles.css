@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 @media print {
     * {
@@ -36,7 +36,7 @@
 
 :root {
     --font: "EB Garamond", serif;
-    --font-title: "Playfair Display", serif;
+    --font-title: 'Russo One', sans-serif;
     --font-sans-serif: "Manrope", sans-serif;
     --black: #1c1f33;
     --black--acc: #222;
@@ -79,13 +79,13 @@ a:visited {
 }
 
 h1 {
-    font: 50px/1 "Playfair Display SC";
+    font: 50px/1 'Russo One';
     text-align: center;
 }
 
 @media (min-width: 700px) {
     h1 {
-        font: 70px/1 "Playfair Display SC";
+        font: 70px/1 'Russo One';
     }
 }
 
