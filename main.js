@@ -8,7 +8,7 @@
 let openai_api_proxy = "https://sordid-hexagonal-bunny.glitch.me/";
 let local_sd_api = "https://gpu.gohai.xyz:3000/";
 let img;
-let report = 3;
+let report = 0;
 let className = [];
 let className2 = [];
 
@@ -23,12 +23,13 @@ let messages = [
   {
     role: "system",
     content:
-      "You are a journalist, your role is to generate a news article imitating The New York Times style, describing absurd, abstract, and novel stories set in a futuristic background. Ensure the stories have a negative twist, involving protagonists who have done something bad. The length of each news article should be similar to a standard newspaper article. You should generate a headline, a short paragraph of content, and the description of the image. Please provide the content in JSON format for easy use. Formatting should strictly follow: {'Headline': ...; 'Content': ...; 'Image Description': ...;} in json format",
+      "You are a journalist, your role is to generate a news article imitating The New York Times style, describing absurd, abstract, and novel stories set in a futuristic background. Ensure the stories have a negative twist, involving protagonists who have done something bad. The length of each news article should be similar to a standard newspaper article. You should generate a headline, a short paragraph of content, and the description of the image. Please provide the content in JSON format for easy use. Formatting should strictly follow: { 'Headline': ...; 'Content': ...; 'Image Description': ...; } in json format",
   },
 ];
 
 function setup() {
   console.log("1");
+
   sendMessage("Please generate a report");
 }
 
@@ -137,6 +138,7 @@ function donePredicting(results) {
           $(this).replaceWith(div);
           $('.a').fadeIn(2000);
         });
+        window.print();
         break;
       case 2:
         $('.pie__image').fadeOut(2000, function () {
