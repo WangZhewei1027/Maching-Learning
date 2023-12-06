@@ -145,7 +145,7 @@ function donePredicting(results) {
           $(this).replaceWith(div);
           $('.pie__image').fadeIn(2000);
         });
-        //window.print();
+        window.print();
         break;
       case 3:
         $('.bottom_pic').fadeOut(2000, function () {

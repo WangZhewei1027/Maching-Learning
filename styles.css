@@ -1,39 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-@media print {
-    * {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    #controls,
-    .footer,
-    .footerarea {
-        display: none;
-    }
-
-    html,
-    body {
-        /*changing width to 100% causes huge overflow and wrap*/
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .template {
-        width: auto;
-        left: 0;
-        top: 0;
-    }
-
-    img {
-        height: 100%;
-    }
-
-    li {
-        margin: 0 0 10px 20px !important;
-    }
-}
-
 :root {
     --font: "EB Garamond", serif;
     --font-title: 'Russo One', sans-serif;
