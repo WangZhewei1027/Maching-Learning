@@ -5,7 +5,7 @@
 // files. Make sure to duplicate it, rather than copying
 // and pasting code :)
 
-let openai_api_proxy = "https://sordid-hexagonal-bunny.glitch.me/";
+let openai_api_proxy = "https://clumsy-special-lemming.glitch.me/";
 let local_sd_api = "https://gpu.gohai.xyz:3000/";
 let img;
 let report = 1;
